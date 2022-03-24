@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  /* padding: .5rem; */
+}
+
+.hero-image {
+  /* background: grey; */
+  display: grid;
+  grid-template-columns: 30% 30%;
+  grid-gap: 3rem;
+  align-items: center;
+  padding: 5rem;
+}
+
+.hero-image div p{
+  color: white;
+  font-size: 28px;
+  font-weight: lighter;
+}
+
+.hero-image div span {
+  display: inline-block;
+  /* background: red; */
+  margin-top: 1rem;
+  line-height: 30px;
+}
+
+body {
+  background: #00B4DB;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #0083B0, #00B4DB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  padding: 1rem 2rem;
+}
+
+nav {
+  border-bottom: solid 2px rgba(255, 255, 255, 0.274)
+}
+
+header nav {
+  /* background: blue; */
+  height: 50px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+header nav a{
+  color: white;
+  text-decoration: none;
+  transition: .3s ;
+  padding: .5em;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+header nav a:hover{
+  background: white;
+  color: black;
+  padding: .7em;
+  border-radius: 10px
+}
+
+h1 {
+  color: white;
+}
+
+span {
+  color: white;
+  margin: .5rem;
+}
+
+header nav a:nth-last-child(1) {
+  animation: bntRegister;
+  animation-iteration-count: infinite;
+  animation-duration: .5s;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+}
+
+header nav a:nth-last-child(1):hover {
+color: white;
+}
+
+
+@keyframes bntRegister {
+  from {
+    transform: scale(1.0);
+    background: #000;
+  }
+
+  to {
+    transform: scale(1.1);
+    background: #000;
+  }
+}

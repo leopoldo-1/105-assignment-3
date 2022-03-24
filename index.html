@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Home</a> <span>|</span>
+      <a href="users.html">Users</a> <span>|</span>
+      <a class="btn-register" href="register.html">Register</a>
+    </nav>
+
+    <!-- <h1>My Awesome User Registration system</h1> -->
+
+    <div>
+    </div>
+
+    <div class="hero-image">
+      <div>
+        <p>Your system to register the users</p>
+        <span>Rem ipsum dolor sit amet consectetur, adipisicing elit. Harum tempore quod debitis sit soluta quaerat,
+          odioro?</span>
+      </div>
+      <img src="img/userSvg.svg" alt="">
+    </div>
+  </header>
+
+  <script>
+    if (localStorage.getItem('users') == null) {
+      window.location.href = "register.html";
+    }
+  </script>
+</body>
+
+</html>
