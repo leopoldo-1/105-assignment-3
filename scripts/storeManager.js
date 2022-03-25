@@ -27,3 +27,15 @@ function readUsers() {
     return list
   }
 }
+
+function remove(index) {
+  console.log('remove storeManager');
+  let data = readUsers();
+
+  //we remove the user in the index
+  data.splice(index, 1)
+
+  //save
+  let val = JSON.stringify(data);// parse into a JSON string
+  localStorage.setItem(LS_KEY, val)
+}

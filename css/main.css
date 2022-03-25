@@ -56,7 +56,7 @@ main {
   margin-left: 10px
 }
 
-#btnSave {
+#btnSave ,#btnSubmit{
   display: inline-block;
   padding: 8px;
   border-radius: 5px;
@@ -64,13 +64,11 @@ main {
   text-decoration: none;
   text-transform: uppercase;
   color: white;
-  background: #185d78;
   border: none;
   cursor: pointer;
   margin-top: 1rem;
   background: black;
   text-align: center;
-
 }
 
 .alert-error {
@@ -87,4 +85,9 @@ main {
 
 .hide {
   display: none;
+}
+
+.log-in-form {
+  display: flex;
+  justify-content: center;
 }

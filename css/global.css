@@ -9,7 +9,8 @@
   grid-template-columns: 30% 30%;
   grid-gap: 3rem;
   align-items: center;
-  padding: 5rem;
+  justify-content: center;
+  padding: 2rem;
 }
 
 .hero-image div p{
@@ -23,6 +24,10 @@
   /* background: red; */
   margin-top: 1rem;
   line-height: 30px;
+}
+
+.hero-image img {
+  height: 250px;
 }
 
 body {
@@ -71,6 +76,11 @@ span {
   margin: .5rem;
 }
 
+button {
+  border: none;
+  padding: 0 .5rem;
+}
+
 header nav a:nth-last-child(1) {
   animation: bntRegister;
   animation-iteration-count: infinite;
@@ -87,7 +97,7 @@ color: white;
 @keyframes bntRegister {
   from {
     transform: scale(1.0);
-    background: #000;
+    background: rgb(31, 31, 31);
   }
 
   to {

@@ -104,10 +104,26 @@ function isValid(user) {
   return valid;
 }
 
+function login() {
+  console.log('login..');
+  let inputEmail = $('#txtEmail').val();
+  let inputPassword = $('#txtPassword').val();
+
+  let users = readUsers();
+
+  for (let i = 0; i < users.lenght; i++) {
+    if (users[i].email === inputEmail && users[i].password === inputPassword) {
+      console.log('usuarios iguales');
+      window.location = 'users.html'
+    }
+  }
+}
+
+
 function init() {
   console.log('registration');
-  $("#txtPassword").change(validatePassword)
-  // register()
+  $(".capture-form #txtPassword").change(validatePassword)
+
 }
 
 window.onload = init;
