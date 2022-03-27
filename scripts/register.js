@@ -32,6 +32,7 @@ function register() {
   if (isValid(theUser)) {
     saveUser(theUser)
     console.log(inputFirstName, inputLastName, inputEmail, inputPassword, inputAge, inputCardNumber, inputAddress, inputPhone, inputColor);
+    window.location = "login.html"
   }
 
   //cleaning inputs
@@ -44,6 +45,8 @@ function register() {
   $("#txtAddress").val('');
   $("#txtPhone").val('');
   $("#txtColor").val('');
+
+
 }
 
 function validatePassword() {
@@ -105,26 +108,21 @@ function isValid(user) {
 }
 
 function login() {
-
-  console.log('login..');
-
   let inputEmail = $('#txtEmail').val();
   let inputPassword = $('#txtPassword').val();
 
   let users = readUsers();
 
-  for (let i = 0; i < users.lenght; i++) {
+  for (let i = 0; i < users.length; i++) {
+    console.log('forr');
     if (users[i].email === inputEmail && users[i].password === inputPassword) {
-      console.log('authenticated');
-      window.location = 'users.html'
-      // window.location.href = "register.html";
+      window.location = "index.html"
     }
   }
 }
 
 
 function init() {
-  console.log('registration');
   $(".capture-form #txtPassword").change(validatePassword)
 
 }

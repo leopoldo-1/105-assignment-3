@@ -20,9 +20,11 @@ function readUsers() {
   console.log('data getted: ', data);
 
   if (!data) {
+    console.log('return []');
     return [];
   }
   else {
+    console.log('return list');
     let list = JSON.parse(data) //convert JSON to OBJ
     return list
   }
