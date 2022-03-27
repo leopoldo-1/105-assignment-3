@@ -60,15 +60,17 @@ main {
   display: inline-block;
   padding: 8px;
   border-radius: 5px;
-  margin-left: 100px;
   text-decoration: none;
   text-transform: uppercase;
   color: white;
   border: none;
   cursor: pointer;
-  margin-top: 1rem;
   background: black;
-  text-align: center;
+  transition: .1s linear;
+}
+
+#btnSave:hover, #btnSubmit:hover {
+  opacity: .8;
 }
 
 .alert-error {
@@ -90,4 +92,9 @@ main {
 .log-in-form {
   display: flex;
   justify-content: center;
+}
+
+.btn-action {
+  margin-top: 1.5rem;
+  text-align: center;
 }

@@ -105,7 +105,9 @@ function isValid(user) {
 }
 
 function login() {
+
   console.log('login..');
+
   let inputEmail = $('#txtEmail').val();
   let inputPassword = $('#txtPassword').val();
 
@@ -113,8 +115,9 @@ function login() {
 
   for (let i = 0; i < users.lenght; i++) {
     if (users[i].email === inputEmail && users[i].password === inputPassword) {
-      console.log('usuarios iguales');
+      console.log('authenticated');
       window.location = 'users.html'
+      // window.location.href = "register.html";
     }
   }
 }
